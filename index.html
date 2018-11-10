@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Add a description about the website"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/compile.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <title>Lorem Ipsum | Full Stack Developer | Resume</title>
+</head>
+
+<body>
+<nav class="section-navbar">
+    <div class="container fluid">
+        <a href="index.html"><img src="/images/logo.png" alt="logo" class="navbar-logo"></a>
+
+        <a class="icon hamburger" onclick="toggleFunction()"><i class="fa fa-bars"></i></a>  
+
+        <div class="navbar-links">
+            <a class="navbar-link" href="#about">About</a>
+            <a class="navbar-link" href="#skills">Skills</a>
+            <a class="navbar-link" href="#projects">Projects</a>
+            <a class="navbar-link" href="#contact">Contact</a>
+        </div>
+    </div>    
+</nav>
+
+<!-- Mobile drop down menu -->
+<div class="drop" id="drop-down">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- About section -->
+<header class="section-header" id="about">
+    <div class="container fluid">
+        <h1 class="heading-primary">
+            <span class="heading-primary-main">Lorem Ipsum</span>
+            <span class="heading-primary-sub">One | Two | Three</span>
+        </h1>
+            
+        <h2 class="heading-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae. 
+        </h2>
+    
+        <a href="#contact" class="btn btn--white btn--animated">Contact</a>
+    </div>
+</header>
+
+<!-- Skills section -->
+<div class="section-skills" id="skills">
+    <div class="container">
+        <h1 class="heading-primary">
+                <span class="heading-primary-main">Technical Skills</span>
+        </h1>
+        
+        <h2 class="heading-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae.            
+        </h2>
+        
+        <div class="skills-field">
+            <div class="skills-card">
+                <img src="/images/logos/html5-logo.png" alt="html" class="card-img">
+                <p>HTML5</p>
+            </div>
+            <div class="skills-card">
+                <img src="/images/logos/css3-logo.png" alt="css" class="card-img">
+                <p>CSS5</p>
+            </div>
+            <div class="skills-card">
+                <img src="/images/logos/js-logo.png" alt="javascript" class="card-img">
+                <p>JavaScript</p>
+            </div>
+            <div class="skills-card">
+                <img src="/images/logos/nodejs-logo.png" alt="nodejs" class="card-img">
+                <p>Node.js</p>
+            </div>
+            <div class="skills-card">
+                <img src="/images/logos/mongodb-logo.png" alt="mongodb" class="card-img">
+                <p>MongoDB</p>
+            </div>
+            <div class="skills-card">
+                <img src="/images/logos/reactjs-logo.png" alt="reactjs" class="card-img">
+                <p>React.js</p>
+            </div>
+            <div class="skills-card">
+                <img src="/images/logos/sass-logo.png" alt="sass" class="card-img">
+                <p>SASS</p>
+            </div>
+            <div class="skills-card">
+                <img src="/images/logos/bootstrap-logo.png" alt="bootstrap" class="card-img">
+                <p>Bootstrap</p>
+            </div>        
+            <div class="skills-card">
+                <img src="/images/logos/balsamiq-logo.png" alt="Balsamiq" class="card-img">
+                <p>Balsamiq</p>
+            </div>                
+            <div class="skills-card">
+                <img src="/images/logos/google-analytics-logo.png" alt="googele-analytics" class="card-img">
+                <p>Goole Anaylitics</p>
+            </div>
+            <div class="skills-card">
+                <img src="/images/logos/git-logo.png" alt="version-control" class="card-img">
+                <p>Version Control</p>
+            </div>
+            <div class="skills-card">
+                <img src="/images/logos/commandline-logo.png" alt="command-line" class="card-img">
+                <p>Command Line</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects section -->
+<div class="section-projects">
+    <div class="container">
+        <h1 class="heading-primary" id="projects">
+            <span class="heading-primary-main">Projects</span>
+            <span class="heading-primary-sub">Comming Soon...</span>
+        </h1>
+        
+        <h2 class="heading-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae.
+        </h2>
+
+        <div class="projects">
+            <img src="/images/under-construction.gif" alt="under-construction">
+        </div>
+
+        <div class="heading-secondary-btn">
+            <a href="#" class="btn btn--orange" target="_blank">View GitHub</a>
+        </div>
+    </div>
+</div>
+
+<!-- Contact section -->
+<div class="section-contact" id="contact">
+    <div class="container">
+        <div class="fluid">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">Contact</span>
+                <span class="heading-primary-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae.</span>
+            </h1>
+            
+            <h2 class="heading-secondary">
+                Fill out the form below or email me at <a href="#" class="contact-link">lorem@ipsum.com</a>.
+            </h2>      
+        </div>
+         
+        <form class="contact-form" name="contactform" method="post" action="#">
+            <div class="contact-form-text">Name<span class="red">*</span></div>
+            <div class="full-width">
+                <input name="name" class="form-control rest" type="text" placeholder="Name" required data-validation-required-message="Please enter your name."/>
+            </div>
+            <div class="contact-form-text">Email<span class="red">*</span></div>
+            <div class="full-width">
+                <input name="email" class="form-control rest" type="email" placeholder="Email" required data-validation-required-message="Please enter your email address."/>
+            </div>
+            <div class="contact-form-text">Message<span class="red">*</span></div>
+            <div class="full-width">
+                <textarea name="message" cols="5" class="form-message rest" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
+            </div>
+            <div class="contact-btn">
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Scroll up -->
+<div class="scroll-up" onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-chevron-circle-up"></i>
+</div>
+
+<!-- Footer section -->
+<footer class="section-footer">
+    <div class="footer-links">
+        <div class="links-logo">
+            <a href="#" aria-label="linkedin" target="_blank" class="footer-btn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="links-logo">
+            <a href="#" aria-label="github" target="_blank" class="footer-btn"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="links-logo">
+            <a href="#" aria-label="email" target="_blank" class="footer-btn"><i class="fas fa-at"></i></a>
+        </div> 
+    </div>
+
+    <div class="footer-about">
+        <p class="footer-line">Made by Lorem Ipsum.</p>
+    </div>
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+.section-header {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 6rem;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($primary-color, 0.8),
+        rgba($secondary-color, 0.8));
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    .fluid {
+        margin: auto;
+        width: 885px;
+        padding: 0 3rem;
+        padding-bottom: 12rem;
+
+
+        @include respond(phone) {
+            width: auto;
+        }
+
+        @include respond(tab-port) {
+            width: auto;
+        }
+    }
+
+
+    .container {
+
+        .heading-primary {
+            &-main {
+                display: block;
+                font-size: 6rem;
+                letter-spacing: .25rem;
+                padding-top: 6rem;
+            
+                animation-name: moveInLeft;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+
+                @include respond(phone) {
+                    font-size: 4rem;
+                }
+
+            }
+
+            &-sub {
+                display: block;
+                font-size: 2rem;
+                letter-spacing: .5rem;
+                padding-top: 3rem;
+            
+                animation: moveInRight 1s ease-out;
+
+                @include respond(tab-port) {
+                    font-size: 1.5rem;
+                    letter-spacing: .25rem;
+                }
+            }
+        }
+
+        .heading-secondary {
+            padding-top: 2rem;
+            padding-bottom: 6rem;
+            color: #EEE;
+
+            @include respond(phone) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

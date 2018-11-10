@@ -1,0 +1,124 @@
+.section-contact {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($primary-color, 0.8),
+        rgba($secondary-color, 0.8));
+    
+        padding-bottom: 5rem;
+
+    .container {
+        @include padding($phone);
+
+        .heading-primary-main {
+            display: block;
+            font-size: 6rem;
+            letter-spacing: .25rem;
+            padding-top: 6rem;
+        
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+    
+            @include respond(phone) {
+                font-size: 4rem;
+            }
+    
+          }
+    
+          .heading-secondary {
+            display: block;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            color: $tertiary-color;
+    
+            @include respond(phone) {
+                font-size: 1.5rem;
+            }
+
+            a {
+                color: $quaternary-color;
+                text-decoration: none;
+            }
+          }
+
+
+          .contact-form {
+            display: block;
+            width: 55rem;
+            margin: 0 auto;
+
+            @include respond(phone) {
+                width: auto;
+            }
+
+            .contact-form-text {
+                padding: 1rem;
+                font-size: 2rem;
+                border-style: none;
+                text-align: center;
+                font-weight: 600;
+                .red {
+                    color: $color-red;
+                }
+            }
+        
+        }
+
+        .rest {
+            border: none;
+
+            .rest:focus {
+                outline: none;
+                box-shadow: 0 0 1rem #ff5722;
+            }
+            
+        }
+        
+
+        .form-control,
+        .form-message {
+            box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.2);
+        
+        }
+        
+        .form-control {
+            width: 100%;
+            border-radius: 1rem;
+            height: 6rem;
+            padding: 1rem;
+        }
+   
+        .form-message {
+            resize: vertical;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 16rem;
+            border-radius: 1rem;
+            padding: 1rem;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+        
+        .contact-btn {
+            margin-top: 3rem;
+
+            .btn {
+                border: none;
+                background-color: $tertiary-color;
+                color: $quaternary-color;
+                padding: 1.5rem 4rem;
+                text-transform: uppercase;
+                border-radius: 10rem;
+                letter-spacing: .2rem;
+                font-weight: 700;
+            }
+
+
+        }
+
+
+    }
+
+}

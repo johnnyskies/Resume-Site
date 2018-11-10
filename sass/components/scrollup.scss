@@ -1,0 +1,22 @@
+.scroll-up {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 3rem;
+    font-size: 5rem;
+    border-radius: 50%;
+
+    i {
+        border-radius: 50%;
+        color: $tertiary-color;
+        background-color: $quaternary-color;
+        cursor: pointer;
+        box-shadow: .25rem 0.5rem .75rem rgba($color-black, .3);
+
+        &:hover {
+            color: darken($tertiary-color, 10%);
+        }
+
+    }
+
+}
