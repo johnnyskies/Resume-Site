@@ -17,5 +17,16 @@
     "node-sass": "^4.9.4",
     "postcss-cli": "^6.0.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnyskies/Resume-Site.git"
+  },
+  "keywords": [
+    "resume-template"
+  ],
+  "bugs": {
+    "url": "https://github.com/johnnyskies/Resume-Site/issues"
+  },
+  "homepage": "https://github.com/johnnyskies/Resume-Site#readme"
 }
